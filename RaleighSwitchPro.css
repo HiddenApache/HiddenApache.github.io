@@ -143,6 +143,7 @@ start and select buttons. */
 }
 .xbox .button.pressed{
     opacity: 1;
+    background-position-y: 162px;
 }
 .xbox .a{
     top: 160px;
