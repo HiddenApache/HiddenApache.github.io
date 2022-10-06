@@ -6,12 +6,12 @@
     and you can observe it as an example. The sticks, buttons, and directional arrows are missing
     because their appropriate elements will be incorperated when their styling is defined below.
     The entirity of the skin's visual styling is done via background images and CSS sprites. */ 
-    background: url(RaleighSNES_Assets\ShinSource.png); 
+    background: url(RaleighSNES_Assets/ShinSource.png); 
     height: 555px;
     width: 1084px;
 }
 .xbox.disconnected { /* This class shows an image when the controller is disconnected */
-    background: url(RaleighSNES Assets\Disconnected.png);
+    background: url(RaleighSNES Assets/Disconnected.png);
 }
 /* This hides the controller's button when disconnected so only the background image remains */ 
 .xbox.disconnected div {
@@ -26,7 +26,7 @@
 .xbox .trigger{/* These are the actual triggers themselves */
     width:235px;
     height:71px;
-    background: url(RaleighSNES Assets\LTrigger1.png);
+    background: url(RaleighSNES Assets/LTrigger1.png);
     opacity: 0;
 }
 /* The left and right classes below are used to position the triggers
@@ -47,7 +47,7 @@ placement */
 .xbox .bumper{
     width: 239px;
     height: 48px;
-    background: url(RaleighSNES Assets\LShoulder1.png);
+    background: url(RaleighSNES Assets/LShoulder1.png);
     opacity: 0;
 }
 .xbox .bumpers{
@@ -110,7 +110,7 @@ start and select buttons. */
 }
 /* Setting the size and CSS sprite for the start adn select buttons */
 .xbox .back, .custom .start{
-    background: url(RaleighSNES Assets\StartSelect1.png);
+    background: url(RaleighSNES Assets/StartSelect1.png);
     width: 75px;
     height: 65px;
     opacity: 0;
@@ -138,7 +138,7 @@ start and select buttons. */
     position: absolute;
     width: 82px;
     height: 81px;
-    background: url(RaleighSNES Assets\FaceButton1.png);
+    background: url(RaleighSNES Assets/FaceButton1.png);
     opacity: 0;
 }
 .xbox .button.pressed{
@@ -172,7 +172,7 @@ the CSS inline. */
 }
 .xbox .stick{
     position: absolute;
-    background: url(RaleighSNES Assets\Sticks.png);
+    background: url(RaleighSNES Assets/Sticks.png);
     background-position: 0 0;
     height:134px;
     width: 135px;
@@ -202,7 +202,7 @@ the CSS inline. */
     opacity: 0;
 }
 .xbox .face.up{
-	background: url(RaleighSNES Assets\DPadU1.png);
+	background: url(RaleighSNES Assets/DPadU1.png);
     left: 75px;
     top: 14px;
     /*background-position: 74px 14px;*/
@@ -210,7 +210,7 @@ the CSS inline. */
 	height: 39px;
 }
 .xbox .face.down{
-	background: url(RaleighSNES Assets\DPadD1.png);
+	background: url(RaleighSNES Assets/DPadD1.png);
     left: 75px;
     top: 138px;
     /*background-position: 74px 138px;*/
@@ -218,7 +218,7 @@ the CSS inline. */
 	height: 39px;
 }
 .xbox .face.left{
-    background: url(RaleighSNES Assets\DPadL1.png);
+    background: url(RaleighSNES Assets/DPadL1.png);
 	top: 75px;
     left: 13px;
     /*background-position: 13px 75px;*/
@@ -226,7 +226,7 @@ the CSS inline. */
 	height: 42px;
 }
 .xbox .face.right{
-    background: url(RaleighSNES Assets\DPadR1.png);
+    background: url(RaleighSNES Assets/DPadR1.png);
 	top: 75px;
     left: 139px;
     /*background-position: 138px 75px;*/
