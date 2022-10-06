@@ -1,6 +1,6 @@
 /*BEGIN SN30 Pro Controller Styling*/
 /*This class defines the base attributes of the skin*/
-.controller.custom{
+.controller.xbox{
     /* The background image is basically the base for the controller's skin. The 
     PS3 controller's skin can be found at http://mrmcpowned.com/gamepad/ps3-assets/base.png
     and you can observe it as an example. The sticks, buttons, and directional arrows are missing
@@ -10,20 +10,20 @@
     height: 555px;
     width: 1084px;
 }
-.custom.disconnected { /* This class shows an image when the controller is disconnected */
+.xbox.disconnected { /* This class shows an image when the controller is disconnected */
     background: url(RaleighSNES Assets\Disconnected.png);
 }
 /* This hides the controller's button when disconnected so only the background image remains */ 
-.custom.disconnected div {
+.xbox.disconnected div {
     display: none;
 }
-.custom .triggers{ /* The triggers are housed inside a div, so this sizes the div properly and positions it */
+.xbox .triggers{ /* The triggers are housed inside a div, so this sizes the div properly and positions it */
     width: 856px;
     height: 71px;
     position: absolute;
     left: 112px;
 }
-.custom .trigger{/* These are the actual triggers themselves */
+.xbox .trigger{/* These are the actual triggers themselves */
     width:235px;
     height:71px;
     background: url(RaleighSNES Assets\LTrigger1.png);
@@ -33,10 +33,10 @@
 within the div they're contained in. Since their positions is realtive
 to the size of the parent element, we simply resize the parent element 
 above to achieve the desired position. */
-.custom .trigger.left{ 
+.xbox .trigger.left{ 
     float: left;
 }
-.custom .trigger.right{
+.xbox .trigger.right{
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     float: right;
@@ -44,30 +44,30 @@ above to achieve the desired position. */
 
 /* The bumpers follow the same methodology as the triggers in terms of
 placement */
-.custom .bumper{
+.xbox .bumper{
     width: 239px;
     height: 48px;
     background: url(RaleighSNES Assets\LShoulder1.png);
     opacity: 0;
 }
-.custom .bumpers{
+.xbox .bumpers{
     position: absolute;
     width: 863px;
     height: 48px;
     left: 110px;
     top: 80px;
 }
-.custom .bumper.pressed{ /* The '.pressed' class is used for most buttons to signify they've been pressed */
+.xbox .bumper.pressed{ /* The '.pressed' class is used for most buttons to signify they've been pressed */
     opacity: 1;
 }
-.custom .bumper.left{
+.xbox .bumper.left{
   /* Call me lazy or smart, but why should I make 2 bumpers when they're symmetrical
   and I can just rotate them in the browser? Also, note that you most likely won't need
   to use a browser speficic prefix unless it's something that is indeed browser specific.
   NOTE: CLR Browser is basically chrome, so you use '-webkit-' as the browser prefix. */
     float: left;
 }
-.custom .bumper.right{
+.xbox .bumper.right{
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     float: right;
@@ -87,21 +87,21 @@ something as pedantic as a name.
 /* Since the player indicator is just a CSS sprite, we change the 
 position of the background to match the player number.
 NOTE: Player orderin starts at 0, so p0 = Player 1 */
-.custom .p0{
+.xbox .p0{
     background-position: 0 -6px;
 }
-.custom .p1{
+.xbox .p1{
     background-position: 0 -28px;
 }
-.custom .p2{
+.xbox .p2{
     background-position: 0 -49px;
 }
-.custom .p3{
+.xbox .p3{
     background-position: 0 -70px;
 }
 /* This is to size and position the containing div for the 
 start and select buttons. */
-.custom .arrows{
+.xbox .arrows{
     position: absolute;
     width: 194px;
     height: 65px;
@@ -109,24 +109,24 @@ start and select buttons. */
     left: 443px;
 }
 /* Setting the size and CSS sprite for the start adn select buttons */
-.custom .back, .custom .start{
+.xbox .back, .custom .start{
     background: url(RaleighSNES Assets\StartSelect1.png);
     width: 75px;
     height: 65px;
     opacity: 0;
 }
-.custom .back.pressed, .custom .start.pressed{
+.xbox .back.pressed, .custom .start.pressed{
     opacity: 1;
 }
-.custom .back{
+.xbox .back{
     float: left;
 }
-.custom .start{
+.xbox .start{
     float: right;
     background-position: 75px 0;
 }
 /* Positioning and size of the container for the face buttons */
-.custom .abxy{
+.xbox .abxy{
     position: absolute;
     width: 287px;
     height: 241px;
@@ -134,74 +134,74 @@ start and select buttons. */
 	right: 77px;
 }
 /* base class used to simplify the sprite mapping */
-.custom .button{
+.xbox .button{
     position: absolute;
     width: 82px;
     height: 81px;
     background: url(RaleighSNES Assets\FaceButton1.png);
     opacity: 0;
 }
-.custom .button.pressed{
+.xbox .button.pressed{
     opacity: 1;
 }
-.custom .a{
+.xbox .a{
     top: 160px;
     left: 102px;
 }
-.custom .b{
+.xbox .b{
     top: 80px;
     left: 205px;
 }
-.custom .x{
+.xbox .x{
     top: 80px;
     left: 0;
 }
-.custom .y{
+.xbox .y{
     top: 0;
     left: 102px;
 }
 /* Analog sticks follow the same principles as the triggers in terms of positioning
 Note that the rotation of the sticks in hard coded with javascript, so it applies 
 the CSS inline. */
-.custom .sticks{
+.xbox .sticks{
     position: absolute;
     width: 446px;
     height: 134px;
     top: 368px;
     left: 317px;
 }
-.custom .stick{
+.xbox .stick{
     position: absolute;
     background: url(RaleighSNES Assets\Sticks.png);
     background-position: 0 0;
     height:134px;
     width: 135px;
 }
-.custom .stick.pressed{
+.xbox .stick.pressed{
     background-position: 135px 0;
 }
-.custom .stick.left{
+.xbox .stick.left{
     top: 0;
     left: 0;
 }
-.custom .stick.right{
+.xbox .stick.right{
     top: 0;
     left: 310px;
 }
 /* Dpad possitioning and sizing */
-.custom .dpad{
+.xbox .dpad{
     position: absolute;
     width: 191px;
     height: 191px;
     top: 176px;
     left: 124px;
 }
-.custom .face{
+.xbox .face{
     /*background: url(https://i.imgur.com/9yG0Ik7.png);*/
     position: absolute;
     opacity: 0;
 }
-.custom .face.up{
+.xbox .face.up{
 	background: url(RaleighSNES Assets\DPadU1.png);
     left: 75px;
     top: 14px;
@@ -209,7 +209,7 @@ the CSS inline. */
 	width: 42px;
 	height: 39px;
 }
-.custom .face.down{
+.xbox .face.down{
 	background: url(RaleighSNES Assets\DPadD1.png);
     left: 75px;
     top: 138px;
@@ -217,7 +217,7 @@ the CSS inline. */
 	width: 42px;
 	height: 39px;
 }
-.custom .face.left{
+.xbox .face.left{
     background: url(RaleighSNES Assets\DPadL1.png);
 	top: 75px;
     left: 13px;
@@ -225,7 +225,7 @@ the CSS inline. */
 	width: 39px;
 	height: 42px;
 }
-.custom .face.right{
+.xbox .face.right{
     background: url(RaleighSNES Assets\DPadR1.png);
 	top: 75px;
     left: 139px;
@@ -233,7 +233,7 @@ the CSS inline. */
 	width: 39px;
 	height: 42px;
 }
-.custom .face.pressed{
+.xbox .face.pressed{
     opacity: 1;
 }
 /* The following entries are empty because I haven't used them yet, but they
@@ -241,51 +241,15 @@ exist for the purpose of displaying a fightstick. Since fightsticks have
 the left and right triggers and digital buttons, there are separate 
 html items that allow the triggers to be shown as button presses isntead of
 an opacity setting */
-.custom .trigger-button.left{
+.xbox .trigger-button.left{
     
 }
-.custom .trigger-button.right{
+.xbox .trigger-button.right{
     
 }
-.custom .trigger-button.left.pressed{
+.xbox .trigger-button.left.pressed{
     
 }
-.custom .trigger-button.right.pressed{
+.xbox .trigger-button.right.pressed{
     
 }
-/* This is where the fight stick CSS would go. The ideal way of 
-showing the input would be to use an image sprite of a fight stick in
-all 8 positions, and change it according to the inputs. The classes 
-themselves are fairly self explanatory. */
-.fstick{
-    position: absolute;
-    width: 140px;
-    height: 132px;
-    top: 192px;
-    left: 74px;
-}
-.fstick.up{
-  
-}
-.fstick.down{
-  
-}
-.fstick.left{
-  
-}
-.fstick.right{
-  
-}
-.fstick.up.right{
-  
-}
-.fstick.up.left{
-  
-}
-.fstick.down.right{
-  
-}
-.fstick.down.left{
-  
-}
-/*END SN30 Pro Controller Styling*/
